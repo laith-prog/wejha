@@ -1,0 +1,32 @@
+# Email Configuration for Laravel
+
+# Add these to your .env file
+
+# Mail Driver (smtp, sendmail, mailgun, ses, postmark, log, array)
+MAIL_MAILER=smtp
+
+# SMTP Server Settings (example for Gmail)
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email@gmail.com
+MAIL_FROM_NAME="Your App Name"
+
+# For Gmail, you need to:
+# 1. Enable 2-Step Verification on your Google account
+# 2. Create an App Password: https://myaccount.google.com/apppasswords
+# 3. Use that App Password here instead of your regular password
+
+# For testing purposes, you can use the log driver
+# This will write emails to storage/logs/laravel.log instead of sending them
+# MAIL_MAILER=log
+
+# For local development, you can use Mailtrap
+# MAIL_MAILER=smtp
+# MAIL_HOST=smtp.mailtrap.io
+# MAIL_PORT=2525
+# MAIL_USERNAME=your-mailtrap-username
+# MAIL_PASSWORD=your-mailtrap-password
+# MAIL_ENCRYPTION=tls 

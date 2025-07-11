@@ -1,0 +1,11 @@
+{
+    "name": "Verification",
+    "alias": "verification",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Verification\\Providers\\VerificationServiceProvider"
+    ],
+    "files": []
+}
